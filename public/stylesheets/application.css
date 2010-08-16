@@ -73,3 +73,11 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+#header {
+	border-bottom: 2px solid red;
+}
+
+#header h1 {
+	font-family: Georgia;
+}
