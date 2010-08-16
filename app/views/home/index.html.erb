@@ -9,3 +9,14 @@ hehe
     <h2><%= link_to post.title, post_path(post) %></h2>
   </div>
 <% end %>
+
+<div class = "comment_class">
+  <h3>Recent Comments</h3>
+  <% @comments.each do |comment| %>  
+
+  <h2><%= link_to comment.body, post_comments_path(comment) %></h2>
+
+  <% end %>
+</div>
+
+

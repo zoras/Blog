@@ -86,3 +86,7 @@ a {
 #footer {
 	text-align: center;
 }
+
+.comment_class {
+	float: right;
+}
