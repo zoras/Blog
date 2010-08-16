@@ -1,0 +1,12 @@
+<p><b>Commenter</b>
+  <%= show_commenter(comment.commenter) %>    
+</p>
+<p>Comment<br />
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Delete Comment', [comment.post, comment],
+                                :confirm => 'Are you sure to delete?', 
+                                :method => :delete %>
+</p>
