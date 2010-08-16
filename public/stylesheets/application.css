@@ -75,9 +75,14 @@ a {
 }
 
 #header {
+	text-align: center;
 	border-bottom: 2px solid red;
 }
 
 #header h1 {
 	font-family: Georgia;
+}
+
+#footer {
+	text-align: center;
 }
