@@ -4,7 +4,7 @@ hehe
 
 <%= link_to "New post", new_post_path%>
 
-<% @posts.each do |post| %>
+<% @posts.each do |post| %>  
   <div class="post_class">
     <h2><%= link_to post.title, post_path(post) %></h2>
   </div>
