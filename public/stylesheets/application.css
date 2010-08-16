@@ -85,8 +85,13 @@ a {
 
 #footer {
 	text-align: center;
+	clear: both;
 }
 
 .comment_class {
 	float: right;
+}
+
+.post_class {
+	float: left;
 }

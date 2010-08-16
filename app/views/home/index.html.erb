@@ -3,19 +3,16 @@
 hehe
 
 <%= link_to "New post", new_post_path%>
-
-<% @posts.each do |post| %>  
-  <div class="post_class">
-    <h2><%= link_to post.title, post_path(post) %></h2>
-  </div>
-<% end %>
+<div class="post_class">
+  <% @posts.each do |post| %>  
+    <h2><%= link_to post.title, post_path(post) %></h2> 
+  <% end %>
+</div>
 
 <div class = "comment_class">
   <h3>Recent Comments</h3>
   <% @comments.each do |comment| %>  
-
-  <h2><%= link_to comment.body, post_comments_path(comment) %></h2>
-
+    <h2><%= link_to comment.body, post_path(comment.post_id) %></h2>
   <% end %>
 </div>
 
